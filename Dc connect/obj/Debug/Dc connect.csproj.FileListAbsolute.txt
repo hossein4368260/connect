@@ -1,0 +1,21 @@
+c:\users\alireza\documents\visual studio 2015\Projects\Dc connect\Dc connect\bin\Debug\Dc connect.exe.config
+c:\users\alireza\documents\visual studio 2015\Projects\Dc connect\Dc connect\obj\Debug\Dc connect.csprojResolveAssemblyReference.cache
+c:\users\alireza\documents\visual studio 2015\Projects\Dc connect\Dc connect\obj\Debug\Dc_connect.Form1.resources
+c:\users\alireza\documents\visual studio 2015\Projects\Dc connect\Dc connect\obj\Debug\Dc_connect.Properties.Resources.resources
+c:\users\alireza\documents\visual studio 2015\Projects\Dc connect\Dc connect\obj\Debug\Dc connect.csproj.GenerateResource.Cache
+c:\users\alireza\documents\visual studio 2015\Projects\Dc connect\Dc connect\bin\Debug\Dc connect.exe
+c:\users\alireza\documents\visual studio 2015\Projects\Dc connect\Dc connect\bin\Debug\Dc connect.pdb
+c:\users\alireza\documents\visual studio 2015\Projects\Dc connect\Dc connect\obj\Debug\Dc connect.exe
+c:\users\alireza\documents\visual studio 2015\Projects\Dc connect\Dc connect\obj\Debug\Dc connect.pdb
+C:\Users\prog\Dc connect\bin\Debug\Dc connect.exe.config
+C:\Users\prog\Dc connect\obj\Debug\Dc connect.exe
+C:\Users\prog\Dc connect\obj\Debug\Dc connect.pdb
+C:\Users\prog\Dc connect\bin\Debug\Dc connect.exe
+C:\Users\prog\Dc connect\bin\Debug\Dc connect.pdb
+C:\Users\prog\Dc connect\obj\Debug\Dc connect.csprojResolveAssemblyReference.cache
+C:\Users\prog\Dc connect\obj\Debug\Dc_connect.Form1.resources
+C:\Users\prog\Dc connect\obj\Debug\Dc_connect.Properties.Resources.resources
+C:\Users\prog\Dc connect\obj\Debug\Dc connect.csproj.GenerateResource.Cache
+D:\Mr 3im\git server\Dc connect\bin\Debug\Dc connect.exe.config
+D:\Mr 3im\git server\Dc connect\obj\Debug\Dc connect.exe
+D:\Mr 3im\git server\Dc connect\obj\Debug\Dc connect.pdb

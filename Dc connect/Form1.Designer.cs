@@ -71,8 +71,8 @@
             this.اتصالبهسرورToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.بررسیشبکهToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listBox6 = new System.Windows.Forms.ListBox();
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.button2 = new System.Windows.Forms.Button();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -132,10 +132,11 @@
             // 
             // listBox5
             // 
-            this.listBox5.Location = new System.Drawing.Point(415, 369);
+            this.listBox5.Location = new System.Drawing.Point(293, 379);
             this.listBox5.Name = "listBox5";
             this.listBox5.Size = new System.Drawing.Size(49, 147);
             this.listBox5.TabIndex = 13;
+            this.listBox5.Visible = false;
             // 
             // timer1
             // 
@@ -184,10 +185,11 @@
             // 
             // listBox4
             // 
-            this.listBox4.Location = new System.Drawing.Point(470, 369);
+            this.listBox4.Location = new System.Drawing.Point(348, 379);
             this.listBox4.Name = "listBox4";
             this.listBox4.Size = new System.Drawing.Size(49, 147);
             this.listBox4.TabIndex = 14;
+            this.listBox4.Visible = false;
             // 
             // listBox3
             // 
@@ -209,7 +211,7 @@
             // 
             this.button1.Location = new System.Drawing.Point(3, 469);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(58, 32);
+            this.button1.Size = new System.Drawing.Size(57, 32);
             this.button1.TabIndex = 8;
             this.button1.Text = "Start";
             this.button1.UseVisualStyleBackColor = true;
@@ -281,7 +283,7 @@
             this.panel1.Controls.Add(this.tx1);
             this.panel1.Controls.Add(this.tx2);
             this.panel1.Controls.Add(this.tx3);
-            this.panel1.Location = new System.Drawing.Point(553, 9);
+            this.panel1.Location = new System.Drawing.Point(631, 9);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(169, 362);
             this.panel1.TabIndex = 21;
@@ -465,23 +467,24 @@
             "1",
             "1",
             "1"});
-            this.listBox6.Location = new System.Drawing.Point(760, 36);
+            this.listBox6.Location = new System.Drawing.Point(821, 36);
             this.listBox6.Name = "listBox6";
             this.listBox6.Size = new System.Drawing.Size(92, 186);
             this.listBox6.TabIndex = 26;
             // 
-            // timer2
-            // 
-            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
-            // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(784, 277);
+            this.button2.Location = new System.Drawing.Point(832, 240);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 27;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // timer2
+            // 
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // Form1
             // 
@@ -563,8 +566,8 @@
         private System.Windows.Forms.ToolStripMenuItem راهنماToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem دربارهماToolStripMenuItem;
         private System.Windows.Forms.ListBox listBox6;
-        private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Timer timer2;
     }
 }
 

@@ -19,19 +19,22 @@ namespace Dc_connect
 
         public void connect()
         {
-	        ghat.Text = listBox3.Items.Count.ToString();
+	         //   ghat.Text = "0";
+		        //vasl.Text = "0";
+            ghat.Text = listBox3.Items.Count.ToString();
 	        vasl.Text = listBox2.Items.Count.ToString();
         }
         public void button1_Click(object sender, EventArgs e)
         {
-			distlist();
+	        #region CodeMain
+         
             dataGridView1.DataSource = null;
             dataGridView1.Rows.Clear();
-            listBox3.Items.Clear();
-           connect();
-            listBox4.Items.Clear();
-            listBox5.Items.Clear();
-            #region CodeMain
+          //  listBox3.Items.Clear();
+         
+        //    listBox4.Items.Clear();
+       //     listBox5.Items.Clear();
+
             var dt = new DataTable();
             dt.Columns.Add(new DataColumn("URL", typeof(string)));
             var view = new DataView(dt);
@@ -54,7 +57,8 @@ namespace Dc_connect
                         listBox2.Items.Add(item);
                         listBox4.Items.Add(m.ToString());
                         listBox2.BackColor = Color.Green;
-                        vasl.Text = listBox2.Items.Count.ToString();
+                    //    vasl.Text = listBox2.Items.Count.ToString();
+				
                         dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Green;
                     }
                     else
@@ -63,7 +67,8 @@ namespace Dc_connect
 	                    listBox3.Items.Add(item);
                         listBox5.Items.Add(m.ToString());
                         listBox3.BackColor = Color.Red;
-                        ghat.Text = listBox3.Items.Count.ToString();
+                    //    ghat.Text = listBox3.Items.Count.ToString();
+						
                         dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
                     }
                 }
@@ -75,25 +80,29 @@ namespace Dc_connect
                     listBox3.Items.Add(item);
 	                listBox5.Items.Add(m.ToString());
 	                listBox3.BackColor = Color.Red;
-	                ghat.Text = listBox3.Items.Count.ToString();
+	          //    ghat.Text = listBox3.Items.Count.ToString();
+					
 	                dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
                 }
                 i++;
                 progressBar1.Value = i;
             }
 
-         
-       //   timer1.Start();
 
             #endregion
+		
+            xpq = 100;
+            timer2.Start();
+			timer1.Stop();
+
         }
         internal void timer1_Tick(object sender, EventArgs e)
         {
+			
             button1_Click(null, null);
-    
 
         }
-
+   
         private void timer1_Tick()
         {
             throw new NotImplementedException();
@@ -110,7 +119,7 @@ namespace Dc_connect
         }
         private void button6_Click(object sender, EventArgs e)
         {
-	       
+	       	timer2.Stop();
             timer1.Stop();
             dataGridView1.DataSource = null;
             dataGridView1.Rows.Clear();
@@ -122,6 +131,7 @@ namespace Dc_connect
             listBox2.BackColor = Color.White;
             listBox3.BackColor = Color.White;
             listBox1.Items.Clear();
+			listBox2.Items.Clear();
         }
         private void button7_Click(object sender, EventArgs e)
         {
@@ -153,7 +163,7 @@ namespace Dc_connect
 	        {
 		        listBox1.Items.Add(item.Key);
 	        }
-	        foreach (var item in items2)
+			foreach (var item in items2)
 	        {
 		        listBox2.Items.Add(item.Key);
 	        }
@@ -163,11 +173,30 @@ namespace Dc_connect
 	        }
         }
 
-        private void timer2_Tick(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
 			distlist();
         }
 
+       private int xpq = 100;
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+	       distlist();
+		   connect();
+		   
+                --xpq;
+		        button1.Text = "...."+xpq.ToString()+"....";
+		        if (xpq == 0)
+		        {
+			        timer2.Stop();
+					listBox2.Items.Clear();
+					listBox3.Items.Clear();
+                    timer1.Start();
+					
+		        }
+
+
+        }
     }
 
 }

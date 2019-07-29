@@ -19,3 +19,12 @@ C:\Users\prog\Dc connect\obj\Debug\Dc connect.csproj.GenerateResource.Cache
 D:\Mr 3im\git server\Dc connect\bin\Debug\Dc connect.exe.config
 D:\Mr 3im\git server\Dc connect\obj\Debug\Dc connect.exe
 D:\Mr 3im\git server\Dc connect\obj\Debug\Dc connect.pdb
+Z:\Mr 3im\C#\DcTlnet\prog\Dc connect\bin\Debug\Dc connect.exe.config
+Z:\Mr 3im\C#\DcTlnet\prog\Dc connect\obj\Debug\Dc connect.exe
+Z:\Mr 3im\C#\DcTlnet\prog\Dc connect\obj\Debug\Dc connect.pdb
+Z:\Mr 3im\C#\DcTlnet\prog\Dc connect\bin\Debug\Dc connect.exe
+Z:\Mr 3im\C#\DcTlnet\prog\Dc connect\bin\Debug\Dc connect.pdb
+Z:\Mr 3im\C#\DcTlnet\prog\Dc connect\obj\Debug\Dc connect.csprojResolveAssemblyReference.cache
+Z:\Mr 3im\C#\DcTlnet\prog\Dc connect\obj\Debug\Dc_connect.Form1.resources
+Z:\Mr 3im\C#\DcTlnet\prog\Dc connect\obj\Debug\Dc_connect.Properties.Resources.resources
+Z:\Mr 3im\C#\DcTlnet\prog\Dc connect\obj\Debug\Dc connect.csproj.GenerateResource.Cache

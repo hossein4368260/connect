@@ -16,13 +16,19 @@ namespace Dc_connect
         {
             InitializeComponent();
         }
+
+        public void connect()
+        {
+	        ghat.Text = listBox3.Items.Count.ToString();
+	        vasl.Text = listBox2.Items.Count.ToString();
+        }
         public void button1_Click(object sender, EventArgs e)
         {
+			distlist();
             dataGridView1.DataSource = null;
             dataGridView1.Rows.Clear();
             listBox3.Items.Clear();
-            ghat.Text = listBox3.Items.Count.ToString();
-            vasl.Text = listBox2.Items.Count.ToString();
+           connect();
             listBox4.Items.Clear();
             listBox5.Items.Clear();
             #region CodeMain
@@ -44,6 +50,7 @@ namespace Dc_connect
                     pr = png.Send(item.ToString(),100);
                     if  (pr.Status == IPStatus.Success)
                     {
+	                   
                         listBox2.Items.Add(item);
                         listBox4.Items.Add(m.ToString());
                         listBox2.BackColor = Color.Green;
@@ -52,6 +59,7 @@ namespace Dc_connect
                     }
                     else
                     {
+					
 	                    listBox3.Items.Add(item);
                         listBox5.Items.Add(m.ToString());
                         listBox3.BackColor = Color.Red;
@@ -59,9 +67,12 @@ namespace Dc_connect
                         dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.Red;
                     }
                 }
+
+           
                 catch
                 {
-	                listBox3.Items.Add(item);
+
+                    listBox3.Items.Add(item);
 	                listBox5.Items.Add(m.ToString());
 	                listBox3.BackColor = Color.Red;
 	                ghat.Text = listBox3.Items.Count.ToString();
@@ -71,8 +82,8 @@ namespace Dc_connect
                 progressBar1.Value = i;
             }
 
-            distlist();
-            //   timer1.Start();
+         
+       //   timer1.Start();
 
             #endregion
         }
@@ -99,10 +110,10 @@ namespace Dc_connect
         }
         private void button6_Click(object sender, EventArgs e)
         {
+	       
             timer1.Stop();
             dataGridView1.DataSource = null;
             dataGridView1.Rows.Clear();
-            distlist();
             listBox3.Items.Clear();
             ghat.Text = listBox3.Items.Count.ToString();
             vasl.Text = listBox2.Items.Count.ToString();
@@ -130,22 +141,33 @@ namespace Dc_connect
             }
         }
 
-      
-
-        
-
-
-        private void distlist()
+        public void distlist()
         {
-	        var items = listBox2.Items.OfType<string>().GroupBy(item => item).ToList();
-	      //  var items1 = listBox3.Items.OfType<string>().GroupBy(item => item).ToList();
-	    //    listBox2.Items.Clear();
-
-	        foreach (var item in items)
+	        var items = listBox1.Items.OfType<string>().GroupBy(item => item).ToList();
+	        var items2 = listBox2.Items.OfType<string>().GroupBy(item => item).ToList();
+	        var items3 = listBox3.Items.OfType<string>().GroupBy(item => item).ToList();
+            listBox1.Items.Clear();
+            listBox2.Items.Clear();
+            listBox3.Items.Clear();
+            foreach (var item in items)
 	        {
-		        listBox2.Items.Add(item.Key);//+ " = " + item.Count());
+		        listBox1.Items.Add(item.Key);
+	        }
+	        foreach (var item in items2)
+	        {
+		        listBox2.Items.Add(item.Key);
+	        }
+	        foreach (var item in items3)
+	        {
+		        listBox3.Items.Add(item.Key);
 	        }
         }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+			distlist();
+        }
+
     }
 
 }

@@ -28,3 +28,13 @@ Z:\Mr 3im\C#\DcTlnet\prog\Dc connect\obj\Debug\Dc connect.csprojResolveAssemblyR
 Z:\Mr 3im\C#\DcTlnet\prog\Dc connect\obj\Debug\Dc_connect.Form1.resources
 Z:\Mr 3im\C#\DcTlnet\prog\Dc connect\obj\Debug\Dc_connect.Properties.Resources.resources
 Z:\Mr 3im\C#\DcTlnet\prog\Dc connect\obj\Debug\Dc connect.csproj.GenerateResource.Cache
+E:\c# socket\prog\Dc connect\bin\Debug\Dc connect.exe.config
+E:\c# socket\prog\Dc connect\obj\Debug\Dc connect.exe
+E:\c# socket\prog\Dc connect\obj\Debug\Dc connect.pdb
+E:\c# socket\prog\Dc connect\bin\Debug\Dc connect.exe
+E:\c# socket\prog\Dc connect\bin\Debug\Dc connect.pdb
+E:\c# socket\prog\Dc connect\obj\Debug\Dc connect.csprojResolveAssemblyReference.cache
+E:\c# socket\prog\Dc connect\obj\Debug\Dc_connect.Form1.resources
+E:\c# socket\prog\Dc connect\obj\Debug\Dc_connect.ip.resources
+E:\c# socket\prog\Dc connect\obj\Debug\Dc_connect.Properties.Resources.resources
+E:\c# socket\prog\Dc connect\obj\Debug\Dc connect.csproj.GenerateResource.Cache

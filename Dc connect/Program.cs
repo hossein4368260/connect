@@ -16,7 +16,7 @@ namespace Dc_connect
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ip());
+            Application.Run(new detect());
         }
     }
 }

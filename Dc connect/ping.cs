@@ -10,28 +10,26 @@ using System.Windows.Forms;
 
 namespace Dc_connect
 {
-    public partial class Form1 : Form
+    public partial class ping : Form
     {
-        public Form1()
+        public ping()
         {
             InitializeComponent();
         }
 
         public void connect()
         {
-	         //   ghat.Text = "0";
-		        //vasl.Text = "0";
+	           // ghat.Text = "0";
+		       // vasl.Text = "0";
             ghat.Text = listBox3.Items.Count.ToString();
 	        vasl.Text = listBox2.Items.Count.ToString();
         }
         public void button1_Click(object sender, EventArgs e)
         {
 	        #region CodeMain
-         
             dataGridView1.DataSource = null;
             dataGridView1.Rows.Clear();
-          //  listBox3.Items.Clear();
-         
+         //   listBox3.Items.Clear();
         //    listBox4.Items.Clear();
        //     listBox5.Items.Clear();
 

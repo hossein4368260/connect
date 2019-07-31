@@ -1,6 +1,6 @@
 ﻿namespace Dc_connect
 {
-    partial class Form1
+    partial class ping
     {
         /// <summary>
         /// Required designer variable.

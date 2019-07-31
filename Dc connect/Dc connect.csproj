@@ -46,25 +46,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="detect.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="detect.Designer.cs">
+      <DependentUpon>detect.cs</DependentUpon>
     </Compile>
-    <Compile Include="ip.cs">
+    <Compile Include="ping.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ip.Designer.cs">
-      <DependentUpon>ip.cs</DependentUpon>
+    <Compile Include="ping.Designer.cs">
+      <DependentUpon>ping.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="detect.resx">
+      <DependentUpon>detect.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ip.resx">
-      <DependentUpon>ip.cs</DependentUpon>
+    <EmbeddedResource Include="ping.resx">
+      <DependentUpon>ping.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -74,6 +74,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -87,6 +88,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tajob1.png" />
+    <None Include="Resources\red.png" />
+    <None Include="Resources\blue.png" />
+    <None Include="Resources\tajob.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

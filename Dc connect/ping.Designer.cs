@@ -486,7 +486,7 @@
             // 
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
-            // Form1
+            // ping
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -510,8 +510,9 @@
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
+            this.Name = "ping";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.ping_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -47,13 +47,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.button1 = new System.Windows.Forms.Button();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -289,6 +289,7 @@
             // 
             // timer1
             // 
+            this.timer1.Interval = 3000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // button1
@@ -300,6 +301,10 @@
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // timer2
+            // 
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // detect
             // 
@@ -350,11 +355,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
         public System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button Reset;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Timer timer2;
     }
 }

@@ -195,6 +195,11 @@ namespace Dc_connect
 
 
         }
+
+        private void ping_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

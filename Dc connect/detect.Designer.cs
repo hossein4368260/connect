@@ -35,26 +35,30 @@
             this.lxleror = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.فایلToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.Reset = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.button1 = new System.Windows.Forms.Button();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -67,21 +71,20 @@
             this.تنظیماتولیهToolStripMenuItem.Name = "تنظیماتولیهToolStripMenuItem";
             this.تنظیماتولیهToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.تنظیماتولیهToolStripMenuItem.Text = "تنظیمات ولیه";
-            this.تنظیماتولیهToolStripMenuItem.Click += new System.EventHandler(this.تنظیماتولیهToolStripMenuItem_Click_1);
             // 
             // textBox5
             // 
             this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.textBox5.Location = new System.Drawing.Point(30, 114);
+            this.textBox5.Location = new System.Drawing.Point(8, 100);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(100, 20);
             this.textBox5.TabIndex = 14;
-            this.textBox5.Text = "10.20.30.70";
+            this.textBox5.Text = "10.20.30.71";
             // 
             // textBox4
             // 
             this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.textBox4.Location = new System.Drawing.Point(30, 88);
+            this.textBox4.Location = new System.Drawing.Point(8, 74);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 20);
             this.textBox4.TabIndex = 13;
@@ -90,78 +93,126 @@
             // lxleror
             // 
             this.lxleror.AutoSize = true;
-            this.lxleror.Location = new System.Drawing.Point(95, 207);
+            this.lxleror.Location = new System.Drawing.Point(43, 208);
             this.lxleror.Name = "lxleror";
-            this.lxleror.Size = new System.Drawing.Size(35, 13);
+            this.lxleror.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lxleror.Size = new System.Drawing.Size(103, 13);
             this.lxleror.TabIndex = 9;
-            this.lxleror.Text = "label4";
+            this.lxleror.Text = "در حال شناسایی .....";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(136, 92);
+            this.label5.Location = new System.Drawing.Point(114, 78);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 13);
+            this.label5.Size = new System.Drawing.Size(75, 13);
             this.label5.TabIndex = 7;
-            this.label5.Text = "Ping red";
+            this.label5.Text = "پینگ کابل قرمز";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(136, 114);
+            this.label4.Location = new System.Drawing.Point(114, 100);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 13);
+            this.label4.Size = new System.Drawing.Size(72, 13);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Ping blue";
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Location = new System.Drawing.Point(225, 40);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(214, 193);
-            this.textBox3.TabIndex = 12;
+            this.label4.Text = "پینگ کابل آبی";
             // 
             // فایلToolStripMenuItem
             // 
+            this.فایلToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.فایلToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.تنظیماتولیهToolStripMenuItem});
             this.فایلToolStripMenuItem.Name = "فایلToolStripMenuItem";
+            this.فایلToolStripMenuItem.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.فایلToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
             this.فایلToolStripMenuItem.Text = "فایل";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.tabControl1);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.lxleror);
-            this.panel1.Controls.Add(this.Reset);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(12, 37);
+            this.panel1.Location = new System.Drawing.Point(2, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(215, 353);
+            this.panel1.Size = new System.Drawing.Size(215, 261);
             this.panel1.TabIndex = 14;
             // 
-            // label1
+            // tabControl1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(63, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Location = new System.Drawing.Point(3, 3);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(209, 175);
+            this.tabControl1.TabIndex = 16;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.textBox5);
+            this.tabPage1.Controls.Add(this.textBox4);
+            this.tabPage1.Controls.Add(this.label2);
+            this.tabPage1.Controls.Add(this.label4);
+            this.tabPage1.Controls.Add(this.textBox2);
+            this.tabPage1.Controls.Add(this.label3);
+            this.tabPage1.Controls.Add(this.textBox1);
+            this.tabPage1.Controls.Add(this.label5);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(201, 149);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "تنظیمات اولیه";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(114, 51);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(87, 13);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "شاخص کابل قرمز";
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.textBox2.Location = new System.Drawing.Point(8, 48);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 5;
+            this.textBox2.Text = "192.168.0.11";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(114, 29);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(84, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "شاخص کابل آبی";
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.textBox1.Location = new System.Drawing.Point(8, 22);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 4;
+            this.textBox1.Text = "10.20.30.76";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.label1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(201, 149);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "ریز مشخصات";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // pictureBox4
             // 
@@ -169,78 +220,42 @@
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.pictureBox4.Image = global::Dc_connect.Properties.Resources.tajob;
-            this.pictureBox4.Location = new System.Drawing.Point(140, 162);
+            this.pictureBox4.Location = new System.Drawing.Point(162, 184);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(68, 58);
+            this.pictureBox4.Size = new System.Drawing.Size(46, 41);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 10;
             this.pictureBox4.TabStop = false;
             // 
             // Reset
             // 
-            this.Reset.Location = new System.Drawing.Point(85, 327);
+            this.Reset.Location = new System.Drawing.Point(318, 248);
             this.Reset.Name = "Reset";
-            this.Reset.Size = new System.Drawing.Size(49, 23);
+            this.Reset.Size = new System.Drawing.Size(77, 25);
             this.Reset.TabIndex = 0;
-            this.Reset.Text = "Reset";
+            this.Reset.Text = "رسیت ای پی";
             this.Reset.UseVisualStyleBackColor = true;
             this.Reset.Click += new System.EventHandler(this.button4_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(140, 327);
+            this.button2.Location = new System.Drawing.Point(401, 248);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(55, 23);
+            this.button2.Size = new System.Drawing.Size(83, 25);
             this.button2.TabIndex = 0;
-            this.button2.Text = "blue";
+            this.button2.Text = "تنظیمات آبی";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(30, 327);
+            this.button3.Location = new System.Drawing.Point(235, 248);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(49, 23);
+            this.button3.Size = new System.Drawing.Size(77, 25);
             this.button3.TabIndex = 0;
-            this.button3.Text = "red";
+            this.button3.Text = "تنظیمات قرمز";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click_1);
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.textBox1.Location = new System.Drawing.Point(30, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.Text = "10.20.30.76";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(136, 43);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 13);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Blue IP";
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.textBox2.Location = new System.Drawing.Point(30, 62);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 5;
-            this.textBox2.Text = "192.168.0.11";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(136, 65);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 13);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Red IP";
             // 
             // menuStrip1
             // 
@@ -248,7 +263,7 @@
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.فایلToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(-14, 12);
+            this.menuStrip1.Location = new System.Drawing.Point(-255, -13);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(48, 24);
             this.menuStrip1.TabIndex = 15;
@@ -260,9 +275,9 @@
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.pictureBox3.Image = global::Dc_connect.Properties.Resources.tajob1;
-            this.pictureBox3.Location = new System.Drawing.Point(400, 127);
+            this.pictureBox3.Location = new System.Drawing.Point(226, 12);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(281, 263);
+            this.pictureBox3.Size = new System.Drawing.Size(260, 221);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 13;
             this.pictureBox3.TabStop = false;
@@ -270,9 +285,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Dc_connect.Properties.Resources.red;
-            this.pictureBox1.Location = new System.Drawing.Point(311, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(223, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(417, 402);
+            this.pictureBox1.Size = new System.Drawing.Size(263, 221);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
@@ -280,9 +295,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Dc_connect.Properties.Resources.blue;
-            this.pictureBox2.Location = new System.Drawing.Point(311, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(223, 12);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(417, 394);
+            this.pictureBox2.Size = new System.Drawing.Size(263, 221);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 12;
             this.pictureBox2.TabStop = false;
@@ -292,37 +307,44 @@
             this.timer1.Interval = 3000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(233, 307);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // timer2
             // 
+            this.timer2.Interval = 5000;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(15, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(169, 23);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "....در حال جستوجوی ای پی  ";
             // 
             // detect
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(727, 410);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(496, 279);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.Reset);
+            this.Controls.Add(this.button2);
             this.Name = "detect";
             this.Text = "detect";
             this.Load += new System.EventHandler(this.detect_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -343,10 +365,8 @@
         private System.Windows.Forms.Label lxleror;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.ToolStripMenuItem فایلToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox textBox1;
@@ -361,5 +381,9 @@
         private System.Windows.Forms.Button Reset;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -48,3 +48,14 @@ Z:\Mr 3im\C#\98-9\prog\Dc connect\obj\Debug\Dc connect.csproj.GenerateResource.C
 Z:\Mr 3im\C#\98-9\prog\Dc connect\bin\Debug\Dc connect.exe
 Z:\Mr 3im\C#\98-9\prog\Dc connect\bin\Debug\Dc connect.pdb
 Z:\Mr 3im\C#\98-9\prog\Dc connect\obj\Debug\Dc_connect.detect.resources
+Z:\Mr 3im\C#\0211\prog\Dc connect\bin\Debug\Dc connect.exe.config
+Z:\Mr 3im\C#\0211\prog\Dc connect\obj\Debug\Dc connect.exe
+Z:\Mr 3im\C#\0211\prog\Dc connect\obj\Debug\Dc connect.pdb
+Z:\Mr 3im\C#\0211\prog\Dc connect\obj\Debug\Dc connect.csprojResolveAssemblyReference.cache
+Z:\Mr 3im\C#\0211\prog\Dc connect\obj\Debug\Dc_connect.detect.resources
+Z:\Mr 3im\C#\0211\prog\Dc connect\obj\Debug\Dc_connect.ping.resources
+Z:\Mr 3im\C#\0211\prog\Dc connect\obj\Debug\Dc_connect.Properties.Resources.resources
+Z:\Mr 3im\C#\0211\prog\Dc connect\obj\Debug\Dc connect.csproj.GenerateResource.Cache
+Z:\Mr 3im\C#\0211\prog\Dc connect\bin\Debug\Dc connect.exe
+Z:\Mr 3im\C#\0211\prog\Dc connect\bin\Debug\Dc connect.pdb
+Z:\Mr 3im\C#\0211\prog\Dc connect\obj\Debug\Dc_connect.Main.resources

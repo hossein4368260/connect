@@ -70,8 +70,6 @@
             this.فایلToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.اتصالبهسرورToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.بررسیشبکهToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listBox6 = new System.Windows.Forms.ListBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -196,7 +194,7 @@
             this.listBox3.FormattingEnabled = true;
             this.listBox3.Location = new System.Drawing.Point(289, 275);
             this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(108, 251);
+            this.listBox3.Size = new System.Drawing.Size(118, 251);
             this.listBox3.TabIndex = 10;
             // 
             // listBox2
@@ -204,7 +202,7 @@
             this.listBox2.FormattingEnabled = true;
             this.listBox2.Location = new System.Drawing.Point(289, 25);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(108, 238);
+            this.listBox2.Size = new System.Drawing.Size(118, 238);
             this.listBox2.TabIndex = 2;
             // 
             // button1
@@ -283,7 +281,7 @@
             this.panel1.Controls.Add(this.tx1);
             this.panel1.Controls.Add(this.tx2);
             this.panel1.Controls.Add(this.tx3);
-            this.panel1.Location = new System.Drawing.Point(631, 9);
+            this.panel1.Location = new System.Drawing.Point(631, 27);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(169, 362);
             this.panel1.TabIndex = 21;
@@ -399,7 +397,7 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.راهنماToolStripMenuItem,
             this.فایلToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(817, -2);
+            this.menuStrip1.Location = new System.Drawing.Point(704, -2);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(96, 24);
             this.menuStrip1.TabIndex = 25;
@@ -447,41 +445,6 @@
             this.بررسیشبکهToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.بررسیشبکهToolStripMenuItem.Text = "بررسی شبکه";
             // 
-            // listBox6
-            // 
-            this.listBox6.FormattingEnabled = true;
-            this.listBox6.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "1",
-            "4",
-            "6",
-            "7",
-            "11",
-            "11",
-            "3",
-            "4",
-            "5",
-            "1",
-            "1",
-            "1"});
-            this.listBox6.Location = new System.Drawing.Point(821, 36);
-            this.listBox6.Name = "listBox6";
-            this.listBox6.Size = new System.Drawing.Size(92, 186);
-            this.listBox6.TabIndex = 26;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(832, 240);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 27;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // timer2
             // 
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
@@ -490,9 +453,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(919, 528);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.listBox6);
+            this.ClientSize = new System.Drawing.Size(806, 528);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.vasl);
             this.Controls.Add(this.panel1);
@@ -566,8 +527,6 @@
         private System.Windows.Forms.ToolStripMenuItem راهنماToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem راهنماToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem دربارهماToolStripMenuItem;
-        private System.Windows.Forms.ListBox listBox6;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Timer timer2;
     }
 }

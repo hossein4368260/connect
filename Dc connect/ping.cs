@@ -17,6 +17,49 @@ namespace Dc_connect
             InitializeComponent();
         }
 
+        public string n;
+        public string nameip;
+        public void switchIP()
+        {
+
+	        switch (n)
+	        {
+
+		        case "192.168.0.82":
+			        nameip = "سازماندهی 1";
+			        break;
+		        case "192.168.0.86":
+			        nameip = "سازماندهی 2";
+			        break;
+		        case "192.168.0.84":
+			        nameip = "سازماندهی 3";
+			        break;
+		        case "192.168.0.20":
+			        nameip = "کارگزینی 1";
+			        break;
+		        case "192.168.0.22":
+			        nameip = "کارگزینی 2";
+			        break;
+		        case "192.168.0.24":
+			        nameip = "کارگزینی 3";
+			        break;
+		        case "192.168.0.70":
+			        nameip = "بایگانی 1";
+			        break;
+		        case "192.168.0.72":
+			        nameip = "بایگانی 2";
+			        break;
+		        default:
+                    //nameip = "  Not Found .... ";
+                    break;
+
+
+            }
+
+        }
+
+
+
         public void connect()
         {
 	           // ghat.Text = "0";
@@ -29,10 +72,6 @@ namespace Dc_connect
 	        #region CodeMain
             dataGridView1.DataSource = null;
             dataGridView1.Rows.Clear();
-         //   listBox3.Items.Clear();
-        //    listBox4.Items.Clear();
-       //     listBox5.Items.Clear();
-
             var dt = new DataTable();
             dt.Columns.Add(new DataColumn("URL", typeof(string)));
             var view = new DataView(dt);
@@ -47,12 +86,14 @@ namespace Dc_connect
                 dt.Rows.Add(new DataColumn(item.ToString(), typeof(string)));
                 try
                 {
+	                n = item.ToString();
+					switchIP();
                     m = dt.Rows.Count;
                     pr = png.Send(item.ToString(),100);
                     if  (pr.Status == IPStatus.Success)
                     {
 	                   
-                        listBox2.Items.Add(item);
+                        listBox2.Items.Add(item+nameip);
                         listBox4.Items.Add(m.ToString());
                         listBox2.BackColor = Color.Green;
                     //    vasl.Text = listBox2.Items.Count.ToString();
@@ -62,7 +103,7 @@ namespace Dc_connect
                     else
                     {
 					
-	                    listBox3.Items.Add(item);
+	                    listBox3.Items.Add(item+nameip);
                         listBox5.Items.Add(m.ToString());
                         listBox3.BackColor = Color.Red;
                     //    ghat.Text = listBox3.Items.Count.ToString();
@@ -75,7 +116,7 @@ namespace Dc_connect
                 catch
                 {
 
-                    listBox3.Items.Add(item);
+                    listBox3.Items.Add(item+nameip);
 	                listBox5.Items.Add(m.ToString());
 	                listBox3.BackColor = Color.Red;
 	          //    ghat.Text = listBox3.Items.Count.ToString();

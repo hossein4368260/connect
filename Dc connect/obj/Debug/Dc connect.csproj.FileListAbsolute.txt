@@ -59,3 +59,7 @@ Z:\Mr 3im\C#\0211\prog\Dc connect\obj\Debug\Dc connect.csproj.GenerateResource.C
 Z:\Mr 3im\C#\0211\prog\Dc connect\bin\Debug\Dc connect.exe
 Z:\Mr 3im\C#\0211\prog\Dc connect\bin\Debug\Dc connect.pdb
 Z:\Mr 3im\C#\0211\prog\Dc connect\obj\Debug\Dc_connect.Main.resources
+E:\New folder\prog\Dc connect\obj\Debug\Dc connect.exe
+E:\New folder\prog\Dc connect\obj\Debug\Dc connect.pdb
+C:\Users\Hossein\Documents\Visual Studio 2015\Projects\ip\prog\Dc connect\obj\Debug\Dc connect.exe
+C:\Users\Hossein\Documents\Visual Studio 2015\Projects\ip\prog\Dc connect\obj\Debug\Dc connect.pdb

@@ -67,6 +67,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="valuepost.cs" />
     <EmbeddedResource Include="detect.resx">
       <DependentUpon>detect.cs</DependentUpon>
     </EmbeddedResource>
